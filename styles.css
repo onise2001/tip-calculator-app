@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+header {
+  max-width: 375px;
+  padding: 40px 144px;
+}
+
+main {
+  max-width: 375px;
+  background-color: white;
+  padding: 32px 24px;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 32px 43px 0 rgba(79, 166, 175, 0.2);
+}
+main,
+header {
+  margin: auto;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+input {
+  padding: 6px 16.5px 6px 18.3px;
+  border-radius: 5px;
+  background-color: #f3f9fa;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #00474b;
+  text-align: right;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  border: solid 2px #26c2ae;
+}
+
+
+.input-div label,
+.tip-section-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #5e7a7d;
+}
+
+#bill {
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: top 16.9px left 19.3px;
+}
+
+.tip-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16.6px;
+  row-gap: 22px;
+  margin: 16px 0 32px;
+}
+
+.tip-button {
+  all: unset;
+  border-radius: 5px;
+  background-color: #00474b;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 6px 51px;
+}
+
+.tip-button:active,
+.tip-button:hover {
+  background-color: #9fe8df;
+}
+
+.selected-button {
+  background-color: #26c2ae;
+}
+
+.five-percent {
+  padding: 6px 58.35px;
+}
+
+.people-label {
+  display: flex;
+  justify-content: space-between;
+}
+.people-label p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e17457;
+}
+.hide {
+  display: none;
+}
+
+#custom-tip {
+  width: 146.08px;
+}
+
+#people {
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px left 17px;
+}
+
+
+.result-section {
+  border-radius: 15px;
+  background-color: #00474b;
+  padding: 39px 22px 24px 24px;
+}
+
+.result-section div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tip-amount {
+  margin-bottom: 25px;
+}
+
+.tip-title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.tip-title span {
+  font-size: 1.3rem;
+  color: #7f9d9f;
+}
+
+.result {
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: -0.67px;
+  text-align: right;
+  color: #26c2ae;
+}
+
+.reset-button {
+  all: unset;
+  padding: 9px 110px;
+  border-radius: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.inactive-reset {
+  color: #00474b;
+  background-color: #0d686d;
+}
+
+.active-reset {
+  background-color: #26c2ae;
+  color: #00474b;
+}
+
+.active:active,
+.active:hover {
+  background-color: #9fe8df;
+}
+button:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  main {
+    max-width: 920px;
+    padding: 32px 32px 32px 48px;
+    border-radius: 25px;
+    display: flex;
+    gap: 47px;
+  }
+  #custom-tip {
+    padding: 6px 14px;
+    width: 117.08px;
+  }
+
+  .result-section {
+    padding: 50px 40px;
+    max-width: 413px;
+  }
+
+  .result-section div {
+    align-items: center;
+  }
+
+  .result {
+    font-size: 4.8rem;
+    letter-spacing: -1px;
+  }
+
+  .reset-button {
+    padding: 9px 136px;
+    margin-top: 122px;
+  }
+
+  .tip-buttons {
+    gap: 14px;
+    row-gap: 22px;
+  }
+
+  .tip-button {
+    padding: 6px 36.5px;
+  }
+
+  .five-percent {
+    padding: 6px 43.85px;
+  }
+}
